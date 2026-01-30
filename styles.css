@@ -62,39 +62,6 @@ header {
   }
 }
 
-@keyframes bgAnimateBitcoin {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-@keyframes bgAnimateBitcoin {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-.right p,
-img {
-  margin: 5px 0;
-}
-
 header img {
   width: 150px;
   height: 24px;
@@ -510,14 +477,15 @@ main {
   color: #757575;
 }
 
+/* gap: 30px; */
+
+/* scroll-snap-type: x proximity; */
 .plans-container__slider {
   display: flex;
-
-  /* gap: 30px; */
   height: 316px;
   overflow-x: scroll;
   overscroll-behavior-x: contain;
-  scroll-snap-type: x proximity;
+  scroll-snap-type: x mandatory;
   margin: 0 20px;
 }
 
@@ -654,6 +622,11 @@ footer .left ul {
   font-size: 0.8rem;
   font-weight: 500;
   line-height: 1.8rem;
+}
+
+.right p,
+.right img {
+  margin: 5px 0;
 }
 
 @media screen and (width >= 750px) {
